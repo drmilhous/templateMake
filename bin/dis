@@ -1,8 +1,8 @@
 #!/bin/bash
 if [ "$#" -ne 2 ]; then
-echo "disass main"
-gdb -batch -ex "file $1" -ex 'disassemble main'
+	echo "disass main"
+	gdb -batch -ex "file $1" -ex 'disassemble main'
 else 
-echo "disass $2"
-gdb -batch -ex "file $1" -ex "disassemble $2"
+	echo "disass $2"
+	gdb -batch -ex "file $1" -ex "disassemble $2"
 fi
